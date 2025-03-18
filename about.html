@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UWE Bristol 5G Classroom Communication</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #003057; /* UWE Bristol blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #00467f;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 48, 87, 0.8), rgba(0, 48, 87, 0.8)), url('https://unsplash.com/photos/YK0HPwWDJ1I/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8Y2xhc3Nyb29tfGVufDB8fHx8MTcwNzIzMDI5MXww&force=true&w=1920') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #003057;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #f1c40f;
+            margin: 15px auto;
+        }
+        
+        .mission-content, .what-we-do-content, .story-content, .commitment-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #003057;
+            margin-bottom: 20px;
+        }
+        
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .team-member h3 {
+            color: #003057;
+            margin-bottom: 5px;
+        }
+        
+        .team-member p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: #003057;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #f1c40f;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>UWE Bristol 5G Classroom Communication</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to our cutting-edge 5G-enabled classroom communication platform—a revolutionary web app designed to transform the way students and educators interact during lectures.</p>
+        </div>
+    </section>
+    
+    <section id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-content">
+                <p>At UWE Bristol, we believe that every classroom should be a hub of dynamic interaction and engagement. Our mission is to empower both students and faculty by enabling discreet, real-time communication during lectures. We strive to create an inclusive digital environment where questions, discussions, and ideas can flourish—helping to bridge the gap between traditional teaching methods and modern educational needs.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="what-we-do" style="background-color: #eef5fc;">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="what-we-do-content">
+                <p>Our innovative platform offers a range of features designed to enhance the classroom experience:</p>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Real-Time Interaction</h3>
+                        <p>Enjoy instant, text-based chat functionality that allows students to ask questions and share ideas without interrupting lectures.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Enhanced Learning</h3>
+                        <p>Support diverse learning styles with a tool designed to facilitate smooth, non-disruptive classroom discussions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Future-Ready Connectivity</h3>
+                        <p>Leverage the speed and low latency of 5G to deliver a reliable and secure communication platform tailored for modern educational environments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="story">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content">
+                <p>Our journey began with a vision to reimagine classroom communication. Recognizing the transformative potential of next-generation connectivity, our team at UWE Bristol set out to create a smart classroom solution that not only meets today's digital learning demands but also anticipates the future of education.</p>
+                <p>By integrating advanced 5G technology with user-centric design, we are paving the way for a fully connected academic ecosystem that nurtures collaboration and innovation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="team" style="background-color: #eef5fc;">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p style="text-align: center; margin-bottom: 30px;">We are a dedicated group of Bsc ITMB 2nd year students.Guided by Agile principles, our team continuously refines the platform through real-world feedback and iterative improvements. Our collaborative spirit drives us to design a solution that truly serves the needs of our academic community.</p>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Sanchit Sood">
+                    <h3>Sanchit Sood</h3>
+                    <p>Project Team Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Thomas Jevtic">
+                    <h3>Thomas Jevtic</h3>
+                    <p>Project Team Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jad Burhan">
+                    <h3>Jad Burhan</h3>
+                    <p>Project Team Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Hamza Warsame">
+                    <h3>Hamza Warsame</h3>
+                    <p>Project Team Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Basha Hassan">
+                    <h3>Basha Hassan</h3>
+                    <p>Project Team Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="commitment">
+        <div class="container">
+            <h2 class="section-title">Our Commitment</h2>
+            <div class="commitment-content">
+                <p>We are committed to delivering a secure, intuitive, and engaging platform that enriches the educational experience. As we continue to innovate—integrating AI-powered features and maintaining robust cybersecurity measures—our focus remains on fostering an environment where every member of our community can thrive.</p>
+                <p style="text-align: center; margin-top: 30px; font-style: italic;">Thank you for joining us on this exciting journey to redefine digital learning.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 UWE Bristol Classroom Communication. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>University of the West of England, Bristol</p>
+        </div>
+    </footer>
+</body>
+</html>
